@@ -61,7 +61,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 6rem);
+  height: calc(100vh - 8rem);
 }
 .about {
   margin: 0 auto;

@@ -69,6 +69,7 @@ button:hover {
 .about blockquote {
   margin-top: 1rem;
   font-style: italic;
+  text-align: center;
 }
 
 .tabs {
