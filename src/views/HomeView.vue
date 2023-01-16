@@ -39,21 +39,60 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="about">
-    <h1>{{ pageTitle }}</h1>
-  </div>
+  <main>
+    <div class="about">
+      <h1>{{ pageTitle }}</h1>
+      <p>See the behavior of hooks, and how they affect the rendering</p>
+    </div>
 
-  <div ref="el" @click="count++" class="counter">
-    {{ count }}
-  </div>
+    <div class="instructions">
+      <p>Open the console</p>
+    </div>
+
+    <div ref="el" @click="count++" class="counter">
+      {{ count }}
+    </div>
+  </main>
 </template>
 
 <style scoped>
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 6rem);
+}
+.about {
+  margin: 0 auto;
+  width: fit-content;
+  text-align: center;
+}
+
+.about h1 {
+  font-weight: bold;
+}
+
+.instructions {
+  width: fit-content;
+  margin: 30px auto;
+  filter: opacity(0.8);
+  font-style: italic;
+}
+
 .counter {
-  margin-block: 2rem;
+  margin: 2rem auto;
   padding: 1rem 1.5rem;
-  border: 1px solid gray;
+  border: 1px solid greenyellow;
   border-radius: 8px;
   width: fit-content;
+  cursor: pointer;
+
+  transition: all ease-in-out 0.3s;
+  box-shadow: 5px 5px greenyellow;
+}
+
+.counter:hover {
+  box-shadow: 3px 3px greenyellow;
 }
 </style>
