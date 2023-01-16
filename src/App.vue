@@ -20,9 +20,10 @@ import { RouterLink, RouterView } from "vue-router";
 <style scoped>
 nav a {
   margin-inline: 1rem;
-  color: greenyellow;
+  color: cornflowerblue;
   font-weight: bold;
   letter-spacing: .1rem;
+  text-decoration: none;
 }
 
 .wrapper {

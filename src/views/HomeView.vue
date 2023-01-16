@@ -69,10 +69,6 @@ main {
   text-align: center;
 }
 
-.about h1 {
-  font-weight: bold;
-}
-
 .instructions {
   width: fit-content;
   margin: 30px auto;
@@ -83,16 +79,16 @@ main {
 .counter {
   margin: 2rem auto;
   padding: 1rem 1.5rem;
-  border: 1px solid greenyellow;
+  border: 1px solid cornflowerblue;
   border-radius: 8px;
   width: fit-content;
   cursor: pointer;
 
   transition: all ease-in-out 0.3s;
-  box-shadow: 5px 5px greenyellow;
+  box-shadow: 5px 5px cornflowerblue;
 }
 
 .counter:hover {
-  box-shadow: 3px 3px greenyellow;
+  box-shadow: 3px 3px cornflowerblue;
 }
 </style>
