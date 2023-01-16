@@ -25,6 +25,11 @@ nav a {
   letter-spacing: .1rem;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .nav-enter-from,
 .nav-leave-to {
   filter: opacity(0);
