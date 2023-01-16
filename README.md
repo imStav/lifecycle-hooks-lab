@@ -1,6 +1,8 @@
-# lifecycle-hooks-lab
+# Lifecycle Hooks Lab
 
-This template should help get you started developing with Vue 3 in Vite.
+> **Lifecycle Hooks Lab** is a playground that takes place in the console (at the moment), and aims to let you see the behaviors of the lifecycle hooks in Vue 3 (Composition API), and how they affect the pages rendering.
+
+> This project is still a **work in progress**.
 
 ## Recommended IDE Setup
 
@@ -33,3 +35,12 @@ npm run build
 ```sh
 npm run lint
 ```
+
+## Technologies
+
+- Vite
+- Vue 3
+- Pinia (not used for now)
+- CSS 3
+
+*Find more information in the `package.json` file*
