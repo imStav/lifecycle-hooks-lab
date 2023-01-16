@@ -15,12 +15,16 @@ const tabs = {
 <template>
   <main>
     <div class="about">
-      <h1>{{ pageTitle }}</h1>
-      <p>Lifecycle Hooks Lab</p>
+      <div>
+        <h1>{{ pageTitle }}</h1>
+        <p>Lifecycle Hooks Lab</p>
       
-      <blockquote>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, vitae!
-      </blockquote>
+        <blockquote>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, vitae!
+        </blockquote>
+      </div>
+
+      <div class="cube"></div>
     </div>
 
     <div class="tabs">
@@ -35,7 +39,7 @@ const tabs = {
   </main>
 </template>
 
-<style>
+<style scoped>
 main {
   display: flex;
   flex-direction: column;
@@ -52,25 +56,32 @@ button {
   border-radius: 4px;
   padding: .5rem 1rem;
   transition: all ease-in-out 0.3s;
-  box-shadow: 5px 5px cornflowerblue;
+  box-shadow: -5px 5px cornflowerblue;
 }
 
 button:hover {
-  box-shadow: 3px 3px cornflowerblue;
+  box-shadow: -3px 3px cornflowerblue;
   cursor: pointer;
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+/* .about {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+} */
 
-.about blockquote {
+/* .about blockquote {
   margin-top: 1rem;
   font-style: italic;
   text-align: center;
-}
+} */
+
+/* .cube {
+  width: 100px;
+  height: 100px;
+  border-radius: 6px;
+  background-color: cornflowerblue;
+  box-shadow: -10px 10px blueviolet;
+} */
 
 .tabs {
   display: flex;

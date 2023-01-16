@@ -2,7 +2,7 @@
     <div class="card">
         <h2>Lifecycle hooks</h2>
         <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, repellendus!
+            Find useful ressources directly from the official Vue documentation here:
         </p>
         <a href="https://vuejs.org/guide/essentials/lifecycle.html">Lifecycle hooks</a>
     </div>
