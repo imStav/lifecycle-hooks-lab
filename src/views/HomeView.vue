@@ -9,9 +9,11 @@ import {
   ref,
 } from "vue";
 
+import { useCounterStore } from "../stores/counter";
+
 const pageTitle = ref("Lifecycle Hooks Lab");
 const el = ref();
-let count = ref(0);
+const store = useCounterStore();
 
 onBeforeMount(() => {
   console.log("onBeforeMount");
@@ -49,8 +51,8 @@ onUnmounted(() => {
       <p>Open the console</p>
     </div>
 
-    <div ref="el" @click="count++" class="counter">
-      {{ count }}
+    <div ref="el" @click="store.increment" class="counter">
+      {{ store.count }}
     </div>
   </main>
 </template>
@@ -83,7 +85,6 @@ main {
   border-radius: 8px;
   width: fit-content;
   cursor: pointer;
-
   transition: all ease-in-out 0.3s;
   box-shadow: 5px 5px cornflowerblue;
 }
