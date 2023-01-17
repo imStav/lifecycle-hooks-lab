@@ -40,7 +40,12 @@ npm run lint
 
 - Vite
 - Vue 3
-- Pinia (not used for now)
+- Pinia
 - CSS 3
 
 *Find more information in the `package.json` file*
+
+## Documentations
+
+- [Pinia: Getting started](https://pinia.vuejs.org/getting-started.html)
+- [Pinia Setup Store](https://pinia.vuejs.org/core-concepts/#setup-stores)
